@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-container{
+    height: 5rem;
+    background-color: #1c2833;
+    display: flex;
+    align-items:center ;
+}
+
+.toolbox-container > *{
+    margin-left: 4rem;
+}
+
+.toolbox-priority-color{
+    height: 3.5rem;
+    width: 18rem;
+    background-color: #273746 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.toolbox-priority-color > *:hover{
+ background-color: aliceblue;
+}
+
+.color{
+    height: 1.5rem;
+    width: 3.5rem;
+    display: flex;
+    
+}
+
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+background-color: yellow;    
+}
+.blue{
+    background-color: blue;
+}
+
+.action-btn-cont{
+    height: 3.5rem;
+    width: 8rem;
+    background-color:#273746 ;
+    display: flex;
+}
+.action-btn-cont > *{
+    display: flex;
+    width: 50%;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    color:cyan;
+   
+}
+
+.add-btn:hover,
+.remove-btn:hover{
+    background-color: greenyellow;
+}
+
+/* Tickets CSS*/
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.ticket-container{
+    height: 10rem;
+    width: 15rem;
+    background-color: coral;
+}
+
+.ticket-color{
+    height: 1rem;
+}
+
+.ticket-id{
+    height: 2rem;
+    background-color: burlywood;
+}
+
+.ticket-lock{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 75px;
+    margin-right: 0.3rem;
+    
+}
+
+/*pop-up CSS*/
+
+.popup-container{
+    height: 50vh;
+    width: 45vw;
+    display: none;
+    position: absolute;
+    top:30%;
+    left:28%;
+}
+
+.textArea-container{
+    height: 100%;
+    width: 75%;
+    resize:none;
+    outline: none;
+    border: none;
+    background-color: #dfe4ea;
+    font-size: 2rem;
+    color: black;
+    padding: 2rem;
+}
+
+.priority-color-container{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c2833;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.priority-color{
+    height: 3rem;
+    width: 4rem;
+}
+
+.active{
+    border:5px solid lightsalmon;
+}
